@@ -17,19 +17,26 @@ function MyMathPowerDefault2(b = 2, n = 3) {
 function TestAllFunctions() {
     console.log("Testing MyMathPowerDefault1 with both parameters given:");
     MyMathPowerDefault1(2, 3);
+
     console.log("Testing MyMathPowerDefault1 with only base parameter given:");
     MyMathPowerDefault1(2);
+
     console.log("Testing MyMathPowerDefault1 with only exponent parameter given:");
     MyMathPowerDefault1(undefined, 3);
+
     console.log("Testing MyMathPowerDefault1 with no parameters given:");
     MyMathPowerDefault1();
 
+
     console.log("Testing MyMathPowerDefault2 with both parameters given:");
     MyMathPowerDefault2(2, 3);
+
     console.log("Testing MyMathPowerDefault2 with only base parameter given:");
     MyMathPowerDefault2(2);
+
     console.log("Testing MyMathPowerDefault2 with only exponent parameter given:");
     MyMathPowerDefault2(undefined, 3);
+    
     console.log("Testing MyMathPowerDefault2 with no parameters given:");
     MyMathPowerDefault2();
 }
