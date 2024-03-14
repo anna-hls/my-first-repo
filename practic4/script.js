@@ -27,7 +27,6 @@ function TestAllFunctions() {
     console.log("Testing MyMathPowerDefault1 with no parameters given:");
     MyMathPowerDefault1();
 
-
     console.log("Testing MyMathPowerDefault2 with both parameters given:");
     MyMathPowerDefault2(2, 3);
 
