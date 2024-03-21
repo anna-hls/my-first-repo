@@ -39,7 +39,6 @@ const PaintBlue = Painter('blue');
 const PaintRed = Painter('red');
 const PaintYellow = Painter('yellow');
 
-// 1.2.9
 const object1 = { maxSpeed: 280, type: "Sportcar", color: "magenta" };
 const object2 = { type: "Truck", "avg speed": 90, "load capacity": 2400 };
 const object3 = { maxSpeed: 180, color: "purple", isCar: true, loadCapacity: 2400 };
@@ -47,4 +46,3 @@ const object3 = { maxSpeed: 180, color: "purple", isCar: true, loadCapacity: 240
 PaintBlue(object1);
 PaintRed(object2);
 PaintYellow(object3);
-
