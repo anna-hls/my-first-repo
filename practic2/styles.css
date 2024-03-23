@@ -29,7 +29,7 @@ h2 {
 .section {
     clear: margin;
     position: relative;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     background-color: #d6b4e0;
     padding: 10px;
     padding-top: 45px;
@@ -39,6 +39,11 @@ h2 {
     margin-bottom: 15px;
     margin-right: 15px;
 
+}
+
+
+.caption2 {
+    color: rgb(255, 255, 255);
 }
 
 .caption1 {
