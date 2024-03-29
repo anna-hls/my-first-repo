@@ -12,7 +12,7 @@ console.log("Custom Triangular 2:", customTriangular2);
 
 function PiMultiplier(number) {
     return function() {
-        return Math.π * number;
+        return Math.PI * number;
     }
 }
 
