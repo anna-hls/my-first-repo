@@ -7,15 +7,13 @@
 </head>
 <body>
     <h1>Контрольна робота №2 Галас Анна-Софія Богданівна</h1>
-
-    <select id="dimensions">
-        <option value="30">30px</option>
-        <option value="50">50px</option>
-        <option value="70">70px</option>
-    </select>
-
-    <button onclick="generateDiv()">Згенерувати</button>
-
     <script src="script.js"></script>
+    <select id="heightSelect">
+        <option value="25">25px</option>
+        <option value="45" selected>45px</option>
+        <option value="65">65px</option>
+    </select>
+    <button onclick="generateElement()">Згенерувати</button>
+    <div id="elementContainer"></div>
 </body>
 </html>
