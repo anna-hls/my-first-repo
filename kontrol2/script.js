@@ -27,6 +27,7 @@ generateButton.addEventListener('click', () => {
   divElement.style.backgroundColor = 'blue';
   divElement.style.width = '30px';
   divElement.style.height = selectElement.value;
+  divElement.style.position = 'relative';
 
   const moveLeftButton = document.createElement('button');
   moveLeftButton.textContent = 'Посунути вліво';
