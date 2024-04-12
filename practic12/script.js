@@ -15,6 +15,6 @@ function submitForm() {
         return checkbox.value;
     }).join(", ");
 
-    var output = username + " (" + email + ") з’їв на " + mealValue + " " + foods + " та залишив такий коментар: \"" + comment + "\"";
+    var output = username + " (" + email + ") з’їв(-ла) на " + mealValue + " " + foods + " та залишив(-ла) такий коментар: \"" + comment + "\"";
     document.getElementById("output").innerText = output;
 }
