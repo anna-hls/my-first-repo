@@ -61,5 +61,3 @@ function insertionSort(arr, order) {
     }
     console.log(`Insertion sort: comparisons - ${comparisons}, exchanges - ${exchanges}`);
 }
-
-export { bubbleSort, selectionSort, insertionSort };
