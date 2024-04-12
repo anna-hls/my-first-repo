@@ -61,3 +61,4 @@ function insertionSort(arr, order) {
     }
     console.log(`Insertion sort: comparisons - ${comparisons}, exchanges - ${exchanges}`);
 }
+
