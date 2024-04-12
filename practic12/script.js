@@ -18,4 +18,3 @@ function submitForm() {
     var output = username + " (" + email + ") з’їв на " + mealValue + " " + foods + " та залишив такий коментар: \"" + comment + "\"";
     document.getElementById("output").innerText = output;
 }
-
