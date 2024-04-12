@@ -14,14 +14,9 @@
 
         console.log('Не відсортований масив:', demoArray);
 
-        const sortedArrayBubble = bubbleSort(demoArray.slice(), 'asc');
-        console.log('Відсортований масив за допомогою Bubble Sort (asc):', sortedArrayBubble);
-
-        const sortedArraySelection = selectionSort(demoArray.slice(), 'desc');
-        console.log('Відсортований масив за допомогою Selection Sort (desc):', sortedArraySelection);
-
-        const sortedArrayInsertion = insertionSort(demoArray.slice(), 'asc');
-        console.log('Відсортований масив за допомогою Insertion Sort (asc):', sortedArrayInsertion);
+        bubbleSort(demoArray.slice(), 'asc');
+        selectionSort(demoArray.slice(), 'desc');
+        insertionSort(demoArray.slice(), 'asc');
     </script>
 </body>
 </html>
