@@ -4,7 +4,7 @@ let arr1 = [
     9,
     4,
     {
-        name: 'Anna-Sofia Halas',
+        name: 'Halas Anna-Sofia',
         mark: 85, 
         subject: 'JS'
     },
@@ -19,7 +19,7 @@ let arr1 = [
 ];
 
 console.log("1.2.4");
-arr1.forEach(element => console.log(element));
+arr1.forEach(item => console.log(item));
 
 console.log("1.2.5");
 arr1.splice(arr1.indexOf(5), 1, 8);
@@ -30,37 +30,37 @@ arr1.splice(arr1.indexOf(4), 0, "Hello");
 console.log(arr1);
 
 console.log("1.2.7");
-let arr2 = arr1.slice(arr1.findIndex(element => typeof element === 'function'));
+let arr2 = arr1.slice().filter(item => typeof item === 'function');
 console.log(arr2);
 
 console.log("1.2.8");
-arr2.forEach(element => console.log(element));
+arr2.forEach(func => console.log(func));
 
 console.log("1.2.9");
-let arr3 = arr1.slice(0, arr1.findIndex(element => typeof element === 'function'));
+let arr3 = arr1.slice().filter(item => typeof item === 'number' && ![5, 4].includes(item));
 console.log(arr3);
 
 console.log("1.2.10");
-arr3.forEach(element => console.log(element));
+arr3.forEach(item => console.log(item));
 
 console.log("1.2.11");
 let arr3Reversed = arr3.slice().reverse();
 console.log(arr3Reversed);
 
 console.log("1.2.12");
-arr3Reversed.forEach(element => console.log(element));
+arr3Reversed.forEach(item => console.log(item));
 
 console.log("1.2.13");
 console.log(arr1.indexOf(-6));
 
 console.log("1.2.14");
-console.log(arr1.filter(element => typeof element === 'number' && element > 4));
+console.log(arr1.filter(item => typeof item === 'number' && item > 4));
 
 console.log("1.2.15");
-arr1[arr1.findIndex(element => typeof element === 'object')].printObjectName(arr1[arr1.findIndex(element => typeof element === 'object')]);
+arr1.find(item => typeof item === 'function')(arr1.find(item => typeof item === 'object'));
 
 console.log("1.2.16");
-console.log(arr1[arr1.indexOf(-6)].fourthPower(arr1[arr1.indexOf(-6)]));
+console.log(arr1.find(item => typeof item === 'function')(arr1[arr1.indexOf(-6)]));
 
 console.log("1.2.17");
 for (let index in arr1) {
@@ -76,10 +76,9 @@ for (let index in arr1) {
     }
 }
 
-
 console.log("1.2.19");
-for (let element of arr1) {
-    console.log(element);
+for (let item of arr1) {
+    console.log(item);
 }
 
 console.log("1.2.20");
@@ -91,8 +90,8 @@ for (let index in arr1) {
 }
 
 console.log("1.2.22");
-for (let element of arr1) {
-    console.log(element);
+for (let item of arr1) {
+    console.log(item);
 }
 
 let Petryk = {
@@ -156,13 +155,13 @@ console.log(set1.has(Mychajlyk));
 
 console.log("1.2.34");
 for (let item of set1) {
-  console.log(`${element.name} is ${element.level} in ${element.skill}`);
+    console.log(`${item.name} is ${item.level} in ${item.skill}`);
 }
 
 console.log("1.2.35");
 set1.delete(Volodyk);
 
 console.log("1.2.36");
-for (let element of set1) {
-    console.log(`${element.name} is ${element.level} in ${element.skill}`);
+for (let item of set1) {
+    console.log(`${item.name} is ${item.level} in ${item.skill}`);
 }
