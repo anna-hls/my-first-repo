@@ -1,5 +1,5 @@
-import { speak as speakHello } from './SpeakHello.js';
-import { speak as speakGoodBye } from './SpeakGoodBye.js';
+import { speak as speakHello } from './library/SpeakHello.js';
+import { speak as speakGoodBye } from './library/SpeakGoodBye.js';
 
 var names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim"];
 
