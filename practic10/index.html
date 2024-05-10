@@ -8,5 +8,20 @@
 <body>
     <h1>Практична робота №10 Галас Анна-Софія</h1>
     <script src="library/sorting.js"></script>
+    <script>
+        function generateRandomArray(length) {
+            const arr = [];
+            for (let i = 0; i < length; i++) {
+                arr.push(Math.floor(Math.random() * 1000));
+            }
+            return arr;
+        }
+
+        const arr = generateRandomArray(100);
+
+        bubbleSort(arr.slice(), 'asc');
+        selectionSort(arr.slice(), 'asc');
+        insertionSort(arr.slice(), 'asc');
+    </script>
 </body>
 </html>
