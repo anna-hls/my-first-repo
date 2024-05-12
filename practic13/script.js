@@ -44,6 +44,9 @@ function startGame() {
     startTimer(specifiedTime);
     moveBlock(difficulty);
     gameActive = true;
+
+    document.getElementById('timer').style.display = 'inline-block';
+    document.getElementById('score').style.display = 'inline-block';
 }
 
 function startTimer(specifiedTime) {
