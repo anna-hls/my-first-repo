@@ -24,8 +24,8 @@
 }
 
 #timer, #score {
-    display: inline-block;
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 #block {
