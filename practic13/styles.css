@@ -17,6 +17,16 @@
     display: none;
 }
 
+#leftTopStats {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#timer, #score {
+    display: inline-block;
+    margin-right: 10px;
+}
 
 #block {
     width: 50px;
