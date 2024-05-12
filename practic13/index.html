@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic 13</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="startPage">
+            <h1>Pixel Hunt</h1>
+            <label for="difficulty">Choose difficulty:</label>
+            <select id="difficulty">
+                <option value="" disabled selected>Please choose an option</option>
+                <option value="easy">Easy</option>
+                <option value="normal">Normal</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="color">Choose color:</label>
+            <select id="color">
+                <option value="" disabled selected>Please choose an option</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+            <button id="startButton">Start</button>
+        </div>
+        <div id="gamePage">
+            <div id="stats">
+            <div id="block"></div>
+            <div id="score">score: 0</div>
+            </div>
+            <div id="timer">time left for click: </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
