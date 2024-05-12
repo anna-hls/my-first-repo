@@ -24,7 +24,7 @@ function startGame() {
     let marginSize = 10;
 
     if (difficulty === 'easy') {
-        specifiedTime = 3;
+        specifiedTime = 4;
         blockSize = 50;
         marginSize = 10;
     } else if (difficulty === 'normal') {
