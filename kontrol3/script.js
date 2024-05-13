@@ -36,7 +36,7 @@ function calculate(operation) {
             if(op2 !== 0) {
                 result = op1/ op2;
             } else {
-                document.getElementById('res').innerText = 'Cannot divide by 0!!!';
+                result = 'operand 2 is equal to 0';
                 return;
             }
             break;
