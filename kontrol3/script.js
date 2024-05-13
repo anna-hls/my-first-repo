@@ -36,7 +36,7 @@ function calculate(operation) {
             if(op2 !== 0) {
                 result = op1/ op2;
             } else {
-                result = 'operand 2 is equal to 0';
+                document.getElementById('res').innerText = 'operand 2 is equal to 0';
                 return;
             }
             break;
