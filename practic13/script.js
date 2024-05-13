@@ -95,7 +95,7 @@ function moveBlock(difficulty) {
         if (gameActive) {
             let currentScore = parseInt(document.getElementById('score').textContent.split(": ")[1]);
             currentScore++;
-            document.getElementById('score').textContent = 'score: ' + currentScore;
+            document.getElementById('score').textContent = 'Score: ' + currentScore;
             clearInterval(timerInterval);
             startGame();
         }
