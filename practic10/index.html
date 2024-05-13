@@ -6,12 +6,17 @@
     <title>Practic 10</title>
 </head>
 <body>
-    <h1>Практична робота №10 Галас Анна-Софія Богданівна</h1>
-    <button onclick="sortAscending()">Сортувати за зростанням</button>
-    <button onclick="sortDescending()">Сортувати за спаданням</button>
+    <h1>Практична робота №10 Галас Анна-Софія</h1>
+    <button id="ascendingBtn">Сортувати за зростанням</button>
+    <button id="descendingBtn">Сортувати за спаданням</button>
     <div id="result"></div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('ascendingBtn').addEventListener('click', sortAscending);
+            document.getElementById('descendingBtn').addEventListener('click', sortDescending);
+        });
+
         function sortAscending() {
             const array = generateRandomArray(100);
             const sortedArray = SortingLibrary.bubbleSort(array.slice(), 'asc');
