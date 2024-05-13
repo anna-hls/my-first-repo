@@ -36,13 +36,13 @@ function calculate(operation) {
             if(op2 !== 0) {
                 result = op1/ op2;
             } else {
-                document.getElementById('res').innerText = 'operand 2 is equal to 0 ';
+                document.getElementById('res').innerText = 'Result: operand 2 is equal to 0 ';
                 return;
             }
             break;
         case 'log':
             if (op1 <= 0) {
-                document.getElementById('res').innerText = 'Operand 1 is less or equal to 0';
+                document.getElementById('res').innerText = 'Result: operand 1 is less or equal to 0';
                 return;
             }
             result = Math.log(op1);
