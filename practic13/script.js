@@ -55,10 +55,10 @@ function startTimer(specifiedTime) {
 
     timerInterval = setInterval(function() {
         if (gameActive) {
-            timerElement.textContent = 'Time left for click: ' + remainingTime + 's';
+            timerElement.textContent = 'Time left for click: \n' + remainingTime + 's';
             if (remainingTime <= 0) {
                 clearInterval(timerInterval);
-                alert('Game over! Your score is ' + document.getElementById('score').textContent + ', congratulations! Please, reload the page to start a new game');
+                alert('Game over! Your score is' + document.getElementById('score').textContent + ', congratulations! Please, reload the page to start a new game');
                 gameActive = false;
             }
             remainingTime--;
