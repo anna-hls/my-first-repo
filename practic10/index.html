@@ -7,7 +7,30 @@
 </head>
 <body>
     <h1>Практична робота №10 Галас Анна-Софія</h1>
-    <script src="library/sorting.js"></script>
-    
+    <button onclick="sortAscending()">Сортувати за зростанням</button>
+    <button onclick="sortDescending()">Сортувати за спаданням</button>
+    <div id="result"></div>
+
+    <script src="js/sorting.js"></script>
+    <script>
+        function sortAscending() {
+            const array = generateRandomArray(100);
+            const sortedArray = SortingLibrary.bubbleSort(array.slice(), 'asc');
+            displayResult(sortedArray);
+        }
+
+        function sortDescending() {
+            const array = generateRandomArray(100);
+            const sortedArray = SortingLibrary.bubbleSort(array.slice(), 'desc');
+            displayResult(sortedArray);
+        }
+
+        function displayResult(array) {
+            document.getElementById('result').innerHTML = array.join(', ');
+        }
+
+        function generateRandomArray(length) {
+        }
+    </script>
 </body>
 </html>
