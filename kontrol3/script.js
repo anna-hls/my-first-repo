@@ -1,4 +1,3 @@
-// Функція для отримання даних з файлу та відображення їх на сторінці
 function fetchData(operation) {
     fetch(`${operation}.json`)
         .then(response => response.json())
@@ -18,14 +17,12 @@ function fetchData(operation) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-// Функція для відображення контенту на сторінці
 function displayContent(content) {
     const contentElement = document.getElementById('content');
     contentElement.style.display = 'block';
     contentElement.innerHTML = content;
 }
 
-// Функція для виконання арифметичних операцій
 function calculate(operation) {
     const op1 = parseFloat(document.getElementById('op1').value);
     const op2 = parseFloat(document.getElementById('op2').value);
@@ -50,7 +47,7 @@ function calculate(operation) {
             break;
         case 'log':
             if (op1 <= 0) {
-                displayContent('Result: operand 1 is less or equal to 0');
+                displayContent('Result: operand 1 is less or equal to  0');
                 return;
             }
             result = Math.log(op1);
@@ -73,6 +70,34 @@ function calculate(operation) {
     document.getElementById('res').innerText = `Result: ${result}`;
 }
 
-// Додавання обробників подій для кнопок
 document.getElementById('add-button').addEventListener('click', () => calculate('add'));
-document
+document.getElementById('sub-button').addEventListener('click', () => calculate('sub'));
+document.getElementById('mul-button').addEventListener('click', () => calculate('mul'));
+document.getElementById('div-button').addEventListener('click', () => calculate('div'));
+document.getElementById('log-button').addEventListener('click', () => calculate('log'));
+document.getElementById('sin-button').addEventListener('click', () => calculate('sin'));
+document.getElementById('tan-button').addEventListener('click', () => calculate('tan'));
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contentElement = document.getElementById('content');
+    contentElement.style.display = 'none'; 
+
+    contentElement.style.border = '2px solid #ccc';
+    contentElement.style.padding = '10px';
+    contentElement.style.marginTop = '10px';
+
+    document.getElementById("log-button").addEventListener("click", function () {
+        const op1 = parseFloat(document.getElementById("op1").value);
+        fetchData("log");
+    });
+
+    document.getElementById("sin-button").addEventListener("click", function () {
+        const op1 = parseFloat(document.getElementById("op1").value);
+        fetchData("sin");
+    });
+
+    document.getElementById("tan-button").addEventListener("click", function () {
+        const op1 = parseFloat(document.getElementById("op1").value);
+        fetchData("tan");
+    });
+});
