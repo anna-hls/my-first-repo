@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #F8F8FF;
     margin: 0;
     padding: 0;
     display: flex;
@@ -50,7 +50,7 @@ td {
 }
 
 .lightOn {
-    background-color: purple;
+    background-color: #DA70D6;
 }
 
 #info {
