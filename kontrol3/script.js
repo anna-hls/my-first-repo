@@ -23,10 +23,15 @@ function displayContent(content) {
     contentElement.innerHTML = content;
 }
 
+function displayResult(message) {
+    document.getElementById('res').innerText = `Result: ${message}`;
+}
+
 function calculate(operation) {
     const op1 = parseFloat(document.getElementById('op1').value);
     const op2 = parseFloat(document.getElementById('op2').value);
     let result;
+
     switch(operation) {
         case 'add':
             result = op1 + op2;
@@ -38,16 +43,16 @@ function calculate(operation) {
             result = op1 * op2;
             break;
         case 'div':
-            if(op2 !== 0) {
+            if (op2 !== 0) {
                 result = op1 / op2;
             } else {
-                displayContent('Result: operand 2 is equal to 0');
+                displayResult('operand 2 is equal to 0');
                 return;
             }
             break;
         case 'log':
             if (op1 <= 0) {
-                displayContent('Result: operand 1 is less or equal to  0');
+                displayResult('operand 1 is less or equal to 0');
                 return;
             }
             result = Math.log(op1);
@@ -64,10 +69,14 @@ function calculate(operation) {
         default:
             result = 'Invalid operation';
     }
+
     if (!['log', 'sin', 'tan'].includes(operation)) {
         document.getElementById('content').style.display = 'none';
     }
-    document.getElementById('res').innerText = `Result: ${result}`;
+
+    if (typeof result !== 'undefined') {
+        displayResult(result);
+    }
 }
 
 document.getElementById('add-button').addEventListener('click', () => calculate('add'));
