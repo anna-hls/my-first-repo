@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', initGame);
 
 async function initGame() {
     try {
-        const response = await fetch('gameLightOut.json');
+        const response = await fetch('coordinates.json');
         games = await response.json();
         initialStates = games.map(game => structuredClone(game.initial_state));
         loadGame(currentGameIndex);
