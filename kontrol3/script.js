@@ -74,7 +74,7 @@ function calculate(operation) {
             break;
         case 'log':
             if (op1 <= 0) {
-                displayResult('operand 1 is less or equal to 0');
+                displayResult('operand 1 is less or equal to  0');
                 return;
             }
             result = Math.log(op1);
