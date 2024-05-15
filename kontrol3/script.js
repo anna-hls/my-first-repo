@@ -1,4 +1,25 @@
-// Функція для отримання даних з файлу та відображення їх на сторінці
+document.addEventListener("DOMContentLoaded", function () {
+    const contentElement = document.getElementById('content');
+    contentElement.style.display = 'none';
+    contentElement.style.border = '2px solid #ccc';
+    contentElement.style.padding = '10px';
+    contentElement.style.marginTop = '10px';
+
+    const buttons = {
+        'add': () => calculate('add'),
+        'sub': () => calculate('sub'),
+        'mul': () => calculate('mul'),
+        'div': () => calculate('div'),
+        'log': () => calculate('log'),
+        'sin': () => calculate('sin'),
+        'tan': () => calculate('tan')
+    };
+
+    for (let [id, handler] of Object.entries(buttons)) {
+        document.getElementById(`${id}-button`).addEventListener('click', handler);
+    }
+});
+
 function fetchData(operation) {
     fetch(`${operation}.json`)
         .then(response => response.json())
@@ -18,19 +39,16 @@ function fetchData(operation) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-// Функція для відображення контенту на сторінці
 function displayContent(content) {
     const contentElement = document.getElementById('content');
     contentElement.style.display = 'block';
     contentElement.innerHTML = content;
 }
 
-// Функція для відображення результату або повідомлення про помилку
 function displayResult(message) {
     document.getElementById('res').innerText = `Result: ${message}`;
 }
 
-// Функція для виконання арифметичних операцій
 function calculate(operation) {
     const op1 = parseFloat(document.getElementById('op1').value);
     const op2 = parseFloat(document.getElementById('op2').value);
@@ -80,38 +98,3 @@ function calculate(operation) {
 
     displayResult(result);
 }
-
-// Додавання обробників подій для кнопок
-document.getElementById('add-button').addEventListener('click', () => calculate('add'));
-document.getElementById('sub-button').addEventListener('click', () => calculate('sub'));
-document.getElementById('mul-button').addEventListener('click', () => calculate('mul'));
-document.getElementById('div-button').addEventListener('click', () => calculate('div'));
-document.getElementById('log-button').addEventListener('click', () => calculate('log'));
-document.getElementById('sin-button').addEventListener('click', () => calculate('sin'));
-document.getElementById('tan-button').addEventListener('click', () => calculate('tan'));
-
-// Додавання обробників подій після завантаження сторінки
-document.addEventListener("DOMContentLoaded", function () {
-    const contentElement = document.getElementById('content');
-    contentElement.style.display = 'none'; 
-
-    contentElement.style.border = '2px solid #ccc';
-    contentElement.style.padding = '10px';
-    contentElement.style.marginTop = '10px';
-
-    // Додавання обробників подій для кнопок sin, log, tan
-    document.getElementById("log-button").addEventListener("click", function () {
-        const op1 = parseFloat(document.getElementById("op1").value);
-        fetchData("log");
-    });
-
-    document.getElementById("sin-button").addEventListener("click", function () {
-        const op1 = parseFloat(document.getElementById("op1").value);
-        fetchData("sin");
-    });
-
-    document.getElementById("tan-button").addEventListener("click", function () {
-        const op1 = parseFloat(document.getElementById("op1").value);
-        fetchData("tan");
-    });
-});
