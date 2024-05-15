@@ -108,21 +108,9 @@
     color: white;
 }
 
-.navbar-content ul > li:first-child {
-    background-image: url("../image/catalog-icon.png");
-}
 
-.navbar-content ul > li:nth-child(2) {
-    background-image: url("../image/about.png");
-}
 
-.navbar-content ul > li:last-child {
-    background-image: url("../image/award.png");
-}
-
-.link-catalog,
-.link-about,
-.link-awards {
+.link-catalog {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -148,7 +136,7 @@
 .link-number::before {
     content: "";
     align-self: center;
-    background: url("../image/phone-icon.png") no-repeat;
+    background: url("../image/phone.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     width: 30px;
@@ -244,7 +232,6 @@
     }
 }
 
-/* MAIN */
 
 main {
     background-color: #EEE8AA;
