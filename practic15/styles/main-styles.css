@@ -1,4 +1,4 @@
-@import url("hero.css");
+@import url("hero-selection.css");
 @import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
@@ -90,7 +90,6 @@ h6 {
     font-family: "Ubuntu Sans", serif;
 }
 
-/* АДАПТИВ */
 
 @media (min-width: 1320px) {
     .container {
