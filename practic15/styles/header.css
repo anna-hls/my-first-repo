@@ -296,10 +296,6 @@ main {
     height: 100%;
 }
 @media (max-width: 992px) and (min-width: 768px) {
-    .slide-card > .carousel-img {
-        width: 100%;
-        height: 650px; 
-    }
     .section {
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         gap: 10px;
@@ -318,16 +314,8 @@ main {
         grid-template: repeat(3, 1fr) / 1fr;
         gap: 5px;
     }
-    .slide-card > .carousel-img {
-        width: 100%;
-        height: 100%; 
-    }
 }
 @media (max-width: 576px) {
-    .slide-card > .carousel-img {
-        width: 100%;
-        height: 100%; 
-    }
     .section {
         grid-template: repeat(3, 1fr) / 1fr;
         gap: 5px;
