@@ -149,7 +149,7 @@
 .link-number::before {
     content: "";
     align-self: center;
-    background: url("../image/phone.png") no-repeat;
+    background: url("../image/phone.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     width: 30px;
