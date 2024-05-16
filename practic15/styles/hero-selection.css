@@ -32,7 +32,7 @@
     font-weight: 700;
     padding: 10px 0;
     text-transform: uppercase;
-    text-shadow: #BDB76B 2px 2px;
+    text-shadow: #DB7093 2px 2px;
 }
 
 .logo-name a {
@@ -104,7 +104,7 @@
 }
 
 .navbar-content ul > li:hover {
-    background-color: #BDB76B;
+    background-color: #DB7093;
     color: white;
 }
 
