@@ -86,6 +86,10 @@ h6 {
     font-weight: 400;
 }
 
+main {
+    background-color: #DB7093; /* Updated background color */
+}
+
 *{
     font-family: "Ubuntu Sans", serif;
 }
