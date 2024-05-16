@@ -145,3 +145,10 @@ h6 {
         display: none;
     }
 }
+
+.catalog-img,
+.sale-img,
+.map iframe {
+    border: solid 1px #4169E1;
+    transition: border-color 0.25s ease;
+}
