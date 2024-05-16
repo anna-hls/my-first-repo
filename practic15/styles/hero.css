@@ -1,6 +1,6 @@
 .header {
     background-color: white;
-    color: #F0E68C;
+    color: #AFEEEE;
 }
 
 
@@ -33,7 +33,7 @@
     font-weight: 700;
     padding: 10px 0;
     text-transform: uppercase;
-    text-shadow: #BDB76B 2px 2px;
+    text-shadow: #4169E1 2px 2px;
 }
 
 .logo-name a {
@@ -97,7 +97,7 @@
     background-repeat: no-repeat;
     flex-direction: column;
     justify-content: flex-end;
-    color: #F0E68C;
+    color: #AFEEEE;
     transition: all 0.25s ease;
     font-size: 1em;
     padding: 5px ;
@@ -105,7 +105,7 @@
 }
 
 .navbar-content ul > li:hover {
-    background-color: #BDB76B;
+    background-color: #4169E1;
     color: white;
 }
 
@@ -137,7 +137,7 @@
 
 .link-number {
     display: flex;
-    color: #F0E68C;
+    color: #AFEEEE;
     font-size: 1.5rem;
     line-height: 30px;
     font-weight: inherit;
@@ -149,7 +149,7 @@
 .link-number::before {
     content: "";
     align-self: center;
-    background: url("../image/phone-icon.png") no-repeat;
+    background: url("../image/phone.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     width: 30px;
@@ -158,7 +158,7 @@
 }
 
 .link-number:hover {
-    background-color: #BDB76B;
+    background-color: #4169E1;
     color: white;
 }
 
@@ -227,13 +227,13 @@
     .link-number {
         width: 100%;
         background-color: #FFFFFF;
-        border: solid 3px #BDB76B;
+        border: solid 3px #4169E1;
         border-radius: 5px;
         justify-content: center;
     }
 
     .communication p {
-        color: #BDB76B;
+        color: #4169E1;
     }
 
     .logo-img {
@@ -332,7 +332,7 @@ main {
 .catalog:hover,
 .sale:hover,
 .map:hover {
-    box-shadow: 2px 2px 2px #BDB76B; 
+    box-shadow: 2px 2px 2px #4169E1; 
 }
 
 .catalog p,
@@ -346,7 +346,7 @@ main {
     width: 100%;
     padding: 10px 0;
     color: black;
-    background-color: #F0E68C;
+    background-color: #AFEEEE;
 }
 
 .map iframe {
