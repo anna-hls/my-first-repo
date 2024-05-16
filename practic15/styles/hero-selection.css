@@ -1,6 +1,6 @@
 .header {
     background-color: white;
-    color: #F0E68C;
+    color: #DB7093;
 }
 
 .header-content {
@@ -124,7 +124,7 @@
 
 .link-number {
     display: flex;
-    color: #F0E68C;
+    color: #DB7093;
     font-size: 1.5rem;
     line-height: 30px;
     font-weight: inherit;
