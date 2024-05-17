@@ -6,7 +6,7 @@
 }
 
 main {
-    background-color: #EEE8AA;
+    background-color: #AFEEEE;
 }
 
 .catalog-container {
@@ -29,7 +29,7 @@ main {
 }
 
 .catalog-content:hover {
-    box-shadow: 1px 1px 8px #BDB76B;
+    box-shadow: 1px 1px 8px #B0C4DE;
 }
 
 .catalog-content img {
@@ -46,7 +46,7 @@ text-transform: uppercase;
     width: 100%;
     padding: 10px 0;
     color: black;
-    background-color: #F0E68C;
+    background-color: #AFEEEE;
 }
 
 @media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
