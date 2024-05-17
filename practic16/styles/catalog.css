@@ -9,26 +9,6 @@ main {
     background-color: #EEE8AA;
 }
 
-.catalog-text {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: black
-}
-
-.catalog-text h2 {
-    font-size: 35px;
-    font-weight: 500;
-}
-
-.catalog-text p {
-    font-size: 16px;
-    padding: 10px 0;
-    font-weight: 700;
-}
-
 .catalog-container {
     display: flex;
     flex-wrap: wrap;
@@ -37,18 +17,19 @@ main {
 
 .catalog-content {
     position: relative;
-    width: 250px; 
-    max-width: 250px; 
+    width: 250px;
+    max-width: 250px;
     height: 250px;
     margin: 30px;
 }
+
 .catalog-content img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
 }
 
 .catalog-content:hover {
-    box-shadow:  1px 1px 8px #BDB76B;
+    box-shadow: 1px 1px 8px #BDB76B;
 }
 
 .catalog-content img {
@@ -65,18 +46,18 @@ main {
     width: 100%;
     padding: 10px 0;
     color: black;
-    background-color:#F0E68C;
+    background-color: #F0E68C;
 }
 
 @media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
     .catalog-content {
-        width: calc(25% - 60px); 
+        width: calc(25% - 60px);
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .catalog-content {
-        width: calc(33.33% - 60px); 
+        width: calc(33.33% - 60px);
     }
     .catalog-container {
         align-items: center;
@@ -87,13 +68,13 @@ main {
 
 @media (min-width: 576px) and (max-width: 767px) {
     .catalog-content {
-        width: calc(50% - 60px); 
+        width: calc(50% - 60px);
     }
 }
 
 @media (max-width: 575px) {
     .catalog-content {
-        width: calc(100% - 60px); 
+        width: calc(100% - 60px);
     }
     .catalog-container {
         flex-direction: column;
