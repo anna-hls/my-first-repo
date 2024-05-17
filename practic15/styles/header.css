@@ -251,7 +251,7 @@ main {
 .catalog:hover,
 .sale:hover,
 .map:hover {
-    box-shadow: 2px 2px 2px #4169E1; 
+    box-shadow: 1px 1px 8px #4169E1; 
 }
 .catalog p,
 .sale p,
