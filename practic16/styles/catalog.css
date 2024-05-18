@@ -29,7 +29,7 @@ main {
 }
 
 .catalog-content:hover {
-    box-shadow: 1px 1px 8px #B0C4DE;
+    box-shadow: 1px 1px 8px #4169E1;
 }
 
 .catalog-content img {
@@ -46,7 +46,7 @@ text-transform: uppercase;
     width: 100%;
     padding: 10px 0;
     color: black;
-    background-color: #AFEEEE;
+    background-color: #B0C4DE;
 }
 
 @media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
