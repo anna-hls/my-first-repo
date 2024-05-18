@@ -1,6 +1,5 @@
 .single-category-container {
-    background-color: #AFEEEE; /* Колір фону */
-    color: #000; /* Колір тексту */
+    color: #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
