@@ -1,5 +1,14 @@
-.single-category-container {
+@import url(catalog.css);
+.single-category_container {
     color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-category-container {
+    background-color: #AFEEEE; /* Колір фону */
+    color: #000; /* Колір тексту */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
