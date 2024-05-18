@@ -7,8 +7,8 @@
 }
 
 .single-category-container {
-    background-color: #AFEEEE; /* Колір фону */
-    color: #000; /* Колір тексту */
+    background-color: #4169E1;
+    color: #4169E1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,7 +37,7 @@
     position: absolute;
     right: 2px;
     bottom: 3px;
-    background-color: #FFFACD;
+    background-color: white;
     text-align: center;
     width: 30%;
     padding: 3px 0;
